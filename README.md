@@ -80,6 +80,42 @@ projeto/lib/components
 
 ![img](imageReadme/COMPONENTS.png)
 
+## Iniciando o Projeto
+
+Siga os passos abaixo para iniciar o projeto:
+
+1.  **Instalação do Flutter:**
+    Certifique-se de ter o Flutter e o Dart SDK instalados no seu ambiente de desenvolvimento. Se ainda não tiver, siga as instruções na [documentação oficial do Flutter](https://flutter.dev/docs/get-started/install).
+
+2.  **Clone o Repositório:**
+    ```bash
+    git clone https://github.com/marco0antonio0/app-box-gerenciamento.git
+    ```
+3.  **Navegue até o Diretório do Projeto:**
+
+    ```bash
+    cd app-box-gerenciamento
+    ```
+
+4.  **Abra o Projeto no Editor:**
+    Abra o projeto no seu editor de código preferido. Por exemplo, se estiver usando o Visual Studio Code, execute:
+
+    ```bash
+    code .
+    ```
+
+5.  **Instale as Dependências:**
+
+    ```bash
+    flutter pub get
+    ```
+
+6.  **Execute o Aplicativo:**
+
+    ```bash
+    flutter run
+    ```
+
 ---
 
 **Desenvolvido por [Marco Antonio](https://github.com/marco0antonio0)**
