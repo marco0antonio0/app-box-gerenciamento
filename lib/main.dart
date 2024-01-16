@@ -62,7 +62,7 @@ class _RedirectState extends State<Redirect> {
       if (!mounted) return;
 
       List<Map<String, dynamic>> usuarios = await estoqueDB.getAllUsuarios();
-      await Future.delayed(Duration(seconds: 0));
+      await Future.delayed(Duration(seconds: 4));
 
       // Verificar novamente se o widget ainda está montado
       if (!mounted) return;

@@ -32,7 +32,7 @@ class _PageConfigState extends State<PageConfig> {
             //                             Widget - menu superior e visual
             TopBar(
                 config: true,
-                titulo: 'Visualizar\nproduto',
+                titulo: 'Confiuração\napp',
                 fnButtom: () {
                   Navigator.of(context).pop();
                 },

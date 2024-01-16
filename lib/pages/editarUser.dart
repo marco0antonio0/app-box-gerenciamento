@@ -50,7 +50,7 @@ class _PageEditarUserState extends State<PageEditarUser> {
             // =======================================================================================
             //                             Widget - menu superior e visual
             TopBar(
-                titulo: 'Ola seja bem\nvindo',
+                titulo: 'Editar dados\nusuario',
                 fnButtom: () {
                   Navigator.of(context).pop();
                 },
