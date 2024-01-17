@@ -2,9 +2,9 @@
 
 O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar o gerenciamento de estoque de produtos. Com funcionalidades intuitivas e uma interface amigável, o aplicativo oferece uma solução completa para o controle de produtos, desde a adição até a alteração e exclusão.
 
-[Download app version - v2 estavel](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2)
+[Download app version - v2 estável](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2)
 
-[Download app version - v2.1 beta instavel](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2.1)
+[Download app version - v2.1 beta instável](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2.1)
 
 ## Informações Gerais
 
@@ -17,9 +17,9 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
 <table>
     <tr>
         <th>Versão do Android</th>
-        <th>v1 - Feature camera - beta instavel </th>
-        <th>v2  - disable Feature camera - estavel </th>
-        <th>v2.1 - Feature camera - beta instavel</th>
+        <th>v1 - Feature camera - beta instável </th>
+        <th>v2  - disable Feature camera - estável </th>
+        <th>v2.1 - Feature camera - beta instável</th>
         <th>responsivo</th>
     </tr>
     <tr>
@@ -144,7 +144,7 @@ O aplicativo proporciona uma experiência intuitiva e eficiente para o gerenciam
 
 Para mais informações sobre o aplicativo, consulte a página de configuração, onde é possível realizar alterações nos dados cadastrais do usuário, excluir todos os produtos e obter informações detalhadas sobre o aplicativo.
 
-## Components contruido e reutilizaveis em diversas parte do app
+## Componentes construido é reutilizavel em diversas parte do app
 
 Components utilizados e organizados em :
 
@@ -194,7 +194,7 @@ Siga os passos abaixo para iniciar o projeto:
 
 ## Observações
 
-### Funcionalidade feature camera:
+### Funcionalidade feature camera - dependencia camera_camera:
 
 Feature camera ,utilizado a dependencia **camera_camera**. Para ativar esta funcionalidade set em _main.dart_ como true:
 
@@ -205,7 +205,7 @@ Feature camera ,utilizado a dependencia **camera_camera**. Para ativar esta func
 final FetueareCamera = false; // set para true para ativar a funcionalidade
 ```
 
-### Teste responsividade com dependencia device_preview:
+### Teste de responsividade - dependencia device_preview:
 
 Para ativar o modo teste em responsividade e poder alterar tamanho da tela em uma emulação android com a dependencia **device_preview**, para isso set como true para ativar a funcionalidade:
 
@@ -221,19 +221,16 @@ final debugMode = false;
 
 ## Feramentas utilizadas
 
-- Dev
-  -
+- ## Dev
   - vscode
   - android Studio
   - prog dart flutter
   - pub.dev dependencias
-- Design
-  -
+- ## Design
   - figma
   - canva
   - icons MaterialApp google
-- Fluxogramas
-  -
+- ## Fluxogramas
   - whimsical
   - visual paradigm
 
