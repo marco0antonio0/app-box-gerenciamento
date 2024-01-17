@@ -2,6 +2,8 @@
 
 O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar o gerenciamento de estoque de produtos. Com funcionalidades intuitivas e uma interface amigável, o aplicativo oferece uma solução completa para o controle de produtos, desde a adição até a alteração e exclusão.
 
+![img](imageReadme/walpaperDonwload.png)
+
 ## Informações Gerais
 
 - **Nome do App:** Box Gerenciamento
