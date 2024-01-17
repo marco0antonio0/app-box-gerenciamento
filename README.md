@@ -111,7 +111,7 @@ O aplicativo segue a arquitetura em MVC (Model-View-Controller), proporcionando 
 
 ### Página Produto
 
-![img](imageReadme/walpaper_prod.png)
+![img](imageReadme/walpaper_prod1.png)
 
 - Detalhes do produto, incluindo nome, descrição, data de alteração, data de criação, quantidade disponível em estoque e valor total.
 - Botão para acessar a página de alteração do produto.
