@@ -35,9 +35,9 @@ Esta pasta abriga funções responsáveis pela gestão do estado de variáveis. 
 
 É o diretório onde estão armazenadas as imagens utilizadas no aplicativo. Elas podem ser referenciadas e utilizadas nos diferentes componentes e páginas.
 
-## Padrão de Desenvolvimento - MVC (Model-View-Controller)
+## Padrão de Desenvolvimento
 
-O aplicativo Box-Gerenciamento adota a arquitetura MVC para garantir uma separação clara entre a lógica de negócios, a apresentação e o controle do aplicativo:
+O aplicativo Box-Gerenciamento adota a padronização de codigo para garantir uma separação clara entre a lógica de negócios, a apresentação e o controle do aplicativo:
 
 Este README fornece uma visão geral da estrutura e do padrão de desenvolvimento adotado no aplicativo Box-Gerenciamento. Consulte o código-fonte para obter detalhes específicos sobre as implementações em cada diretório e classe.
 
