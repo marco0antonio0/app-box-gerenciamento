@@ -219,4 +219,24 @@ final debugMode = false;
 
 ---
 
+## Feramentas utilizadas
+
+- Dev
+  -
+  - vscode
+  - android Studio
+  - prog dart flutter
+  - pub.dev dependencias
+- Design
+  -
+  - figma
+  - canva
+  - icons MaterialApp google
+- Fluxogramas
+  -
+  - whimsical
+  - visual paradigm
+
+---
+
 **Desenvolvido por [Marco Antonio](https://github.com/marco0antonio0)**
