@@ -3,11 +3,10 @@
 - Acesso rapido
   - [sobre organização de pastas](/arquitetura-app/README.md)
   - [como inciar o projeto](#iniciando-o-projeto)
-  - [download do app - v2.0 estavel ](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2)
-    - [compatibilidade](#compatibilidade)
-  - [download do app - v2.1 instavel - feature camera ](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2.1)
-    - [compatibilidade](#compatibilidade)
   - [dependencias utilizadas](#dependências)
+  - [download do app - v2.0 estavel ](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2)
+  - [download do app - v2.1 instavel - feature camera ](https://github.com/marco0antonio0/app-box-gerenciamento/releases/tag/v2.1)
+  - [compatibilidade](#compatibilidade)
 
 O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar o gerenciamento de estoque de produtos. Com funcionalidades intuitivas e uma interface amigável, o aplicativo oferece uma solução completa para o controle de produtos, desde a adição até a alteração e exclusão.
 
