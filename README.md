@@ -1,4 +1,4 @@
-![img](imageReadme/walpaperLogo.png)
+![img](imageReadme/walpaperLogo2.png)
 
 O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar o gerenciamento de estoque de produtos. Com funcionalidades intuitivas e uma interface amigável, o aplicativo oferece uma solução completa para o controle de produtos, desde a adição até a alteração e exclusão.
 
@@ -189,6 +189,33 @@ Siga os passos abaixo para iniciar o projeto:
     ```bash
     flutter run
     ```
+
+---
+
+## Observações
+
+### Funcionalidade feature camera:
+
+Feature camera ,utilizado a dependencia **camera_camera**. Para ativar esta funcionalidade set em _main.dart_ como true:
+
+```dart
+//=======================================
+//           Função nova
+//      camera acessos a fotos
+final FetueareCamera = false; // set para true para ativar a funcionalidade
+```
+
+### Teste responsividade com dependencia device_preview:
+
+Para ativar o modo teste em responsividade e poder alterar tamanho da tela em uma emulação android com a dependencia **device_preview**, para isso set como true para ativar a funcionalidade:
+
+```dart
+//=======================================
+// debugMode:
+// refere-se a adaptação da tela em
+// diversos cenarios
+final debugMode = false;
+```
 
 ---
 
