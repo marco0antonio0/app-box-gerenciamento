@@ -47,28 +47,28 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <td>Android 10</td>
         <td>---------</td>
         <td>✅</td>
-        <td>em andamento</td>
+        <td>✅</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 11</td>
         <td>---------</td>
         <td>✅</td>
-        <td>em andamento</td>
+        <td>✅</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 12</td>
         <td>---------</td>
         <td>✅</td>
-        <td>em andamento</td>
+        <td>✅</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 13 </td>
         <td>---------</td>
         <td>✅</td>
-        <td>em andamento</td>
+        <td>✅</td>
         <td>✅</td>
     </tr>
 </table>

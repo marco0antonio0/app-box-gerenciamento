@@ -35,6 +35,8 @@ class _PageEditarState extends State<PageEditar> {
     controllerQtds.text = widget.data['qtdsProd'];
 
     try {
+      // se existir alguma foto registrada ela sera inicializada no
+      // na variavel imageFile
       if (widget.data['pathImage'].length > 0) {
         setState(() {
           imageFile = File(widget.data['pathImage']);

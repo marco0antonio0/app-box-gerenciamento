@@ -52,8 +52,10 @@ class _PageMessageState extends State<PageMessage> {
                         ico: !widget.err ? Icons.check : Icons.error,
                         icon: true),
                     // =======================================================================================
+                    //                                  Margem
                     const SizedBox(height: 5),
                     // =======================================================================================
+                    //                           Widget - Text estilizado
                     ParagraphType2(
                         titulo: !widget.err
                             ? 'Salvo com sucesso'

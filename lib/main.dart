@@ -73,13 +73,14 @@ class _RedirectState extends State<Redirect> {
 
       // Verificar novamente se o widget ainda está montado
       if (!mounted) return;
-
+      // Verificado e exsite usuario cadastrado então existe banco de dados ja iniciado
       if (usuarios.isNotEmpty) {
         instance.nome = usuarios[0]['nome'];
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => PageHome()),
         );
       } else {
+        // Verificado e NÃO exsite usuario cadastrado então NÃO existe banco de dados ja iniciado
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => PageCadastroUser()),
         );

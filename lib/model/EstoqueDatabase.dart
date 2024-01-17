@@ -3,6 +3,8 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
+// ===========================================================
+//              Class de padrão Singleton
 class EstoqueDatabase {
   // Singleton instance
   static EstoqueDatabase? _instance;
@@ -19,16 +21,23 @@ class EstoqueDatabase {
     return _instance!;
   }
 
+  // Função geter
+  // Função verifica se o banco de dados exista
+  // Caso exita ele retorna o mesmo
+  // Caso NÃO exita ele iniciara outro database
   Future<Database?> get database async {
     if (_database != null) return _database;
     _database = await _init();
     return _database;
   }
 
+  // Função recal para iniciar o banco de dados
   Future<Database> _init() async {
     return await openDatabase(
       join(await getDatabasesPath(), 'estoque_data3.db'),
       onCreate: (db, version) {
+        // =========================================================
+        //                QUERY DATABASE ESTOQUE
         db.execute(
           '''
             CREATE TABLE estoque (
@@ -43,6 +52,8 @@ class EstoqueDatabase {
             )
             ''',
         );
+        // =========================================================
+        //                QUERY DATABASE USUARIOS
         db.execute(
           '''
             CREATE TABLE usuarios (
@@ -55,6 +66,11 @@ class EstoqueDatabase {
       version: 5,
     );
   }
+
+// ==================================================================================
+//                FUNÇÕES CRUD DO DATABASE - USUARIO - ESTOQUE
+// ==================================================================================
+// ==================================================================================
 
   // Function to execute raw SQL query
   Future<List<Map<String, dynamic>>> rawQuery(String sql,
@@ -166,6 +182,7 @@ class EstoqueDatabase {
     return await db!.rawQuery('SELECT * FROM usuarios');
   }
 
+  // Função para deletar todos os produtos
   Future<void> deleteAllProducts() async {
     var db = await EstoqueDatabase.instance.database;
     await db!.rawDelete('DELETE FROM estoque');

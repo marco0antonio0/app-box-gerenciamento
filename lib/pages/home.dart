@@ -104,6 +104,7 @@ class _PageHomeState extends State<PageHome> {
                     //                                  Margem
                     const SizedBox(height: 5),
                     // =======================================================================================
+                    //          Lista gerada pelo futureBuilder consumindo o database estoque
                     const ListViewProds()
                   ],
                 ),

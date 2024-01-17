@@ -29,9 +29,11 @@ class ViewVizualize extends StatelessWidget {
         children: [
           const Spacer(flex: 10),
           //==========================================================================
-          //                    Text - - titulo identificador
+          //                    AutoText - - titulo identificador
           Expanded(
               flex: 100,
+              // ================================================
+              //          AutoText - titulo identificador
               child: AutoSizeText(titulo,
                   style: const TextStyle(
                       fontSize: 18,
@@ -41,7 +43,7 @@ class ViewVizualize extends StatelessWidget {
           //                                margem
           const Spacer(flex: 5),
           //==========================================================================
-          //                    Text - - valor identificador
+          //                    AutoText - - valor identificador
 
           Expanded(
               flex: 100,
@@ -50,6 +52,8 @@ class ViewVizualize extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(width: 2.0, color: Colors.white)),
                 child: Center(
+                    // ================================================
+                    //          AutoText - valor identificador
                     child: AutoSizeText(
                         valor.substring(0, valor.length > 8 ? 8 : valor.length),
                         style: const TextStyle(

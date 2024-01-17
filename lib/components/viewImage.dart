@@ -1,10 +1,5 @@
 // ignore_for_file: file_names, must_be_immutable
-
-// import 'dart:io';
-
-// import 'package:box_estoque/model/decorateUI.dart';
 import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
 
 // ignore: non_constant_identifier_names
 // final DecorateUI temp = Get.put(DecorateUI());
@@ -31,6 +26,9 @@ class _ViewImageState extends State<ViewImage> {
       width: larguraRelativa,
       margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
       color: widget.path != null ? null : Color(personColor),
+      // =======================================
+      //      verifica se existe algum path
+      //      imagem passada como parametro
       child: widget.path != null
           ? Align(
               alignment: Alignment.centerLeft,
