@@ -10,7 +10,7 @@ import 'package:get/get.dart';
 //=======================================
 //           Função nova
 //      camera acessos a fotos
-final FetueareCamera = true;
+final FetueareCamera = false;
 //=======================================
 // debugMode:
 // refere-se a adaptação da tela em

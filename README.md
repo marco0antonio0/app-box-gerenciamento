@@ -11,48 +11,56 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
 <table>
     <tr>
         <th>Versão do Android</th>
-        <th>v1  - estavel </th>
-        <th>v1.2 - Feature camera - instavel</th>
+        <th>v1 - Feature camera - beta instavel </th>
+        <th>v2  - disable Feature camera - estavel </th>
+        <th>v2.1 - Feature camera - beta instavel</th>
         <th>responsivo</th>
     </tr>
     <tr>
         <td>Android 7 (Nougat)</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 8 (Oreo)</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 9 (Pie)</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 10</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 11</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 12</td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 13 </td>
+        <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
         <td>✅</td>

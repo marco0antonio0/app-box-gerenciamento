@@ -119,7 +119,7 @@ Widget Item({data, fn, largura}) {
         height: 130,
         margin: const EdgeInsets.only(bottom: 8),
         decoration: BoxDecoration(
-            color: const Color(0xffFAFBF7),
+            color: Colors.white,
             borderRadius: BorderRadius.circular(15),
             border:
                 Border.all(width: 2.0, color: Colors.black.withOpacity(0.15))),
