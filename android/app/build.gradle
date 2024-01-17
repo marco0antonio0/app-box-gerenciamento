@@ -24,7 +24,8 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.box_estoque"
-    compileSdkVersion flutter.compileSdkVersion
+    // compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion 33 // alternativa a linha acima
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -45,8 +46,15 @@ android {
         applicationId "com.example.box_estoque"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        // 
+        //    codigo origem - não deletar
+        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        // minSdkVersion flutter.minSdkVersion
+        // targetSdkVersion flutter.targetSdkVersion
+
+        minSdkVersion 22 // alternativa a linha acima
+        targetSdkVersion 33 // alternativa a linha acima
+        
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }

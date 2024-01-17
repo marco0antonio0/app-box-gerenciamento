@@ -1,4 +1,5 @@
 ![img](imageReadme/walpaperLogo.png)
+
 O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar o gerenciamento de estoque de produtos. Com funcionalidades intuitivas e uma interface amigável, o aplicativo oferece uma solução completa para o controle de produtos, desde a adição até a alteração e exclusão.
 
 ## Informações Gerais
@@ -7,12 +8,63 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
 - **Desenvolvido em:** Flutter
 - **Persistência de Dados:** SQLite (Sqflite)
 
+<table>
+    <tr>
+        <th>Versão do Android</th>
+        <th>v1  - estavel </th>
+        <th>v1.2 - Feature camera - instavel</th>
+        <th>responsivo</th>
+    </tr>
+    <tr>
+        <td>Android 7 (Nougat)</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 8 (Oreo)</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 9 (Pie)</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 10</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 11</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 12</td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Android 13 </td>
+        <td>✅</td>
+        <td>em andamento</td>
+        <td>✅</td>
+    </tr>
+</table>
+
 ## Permissões Necessárias
 
 Para garantir o pleno funcionamento do aplicativo, são necessárias as seguintes permissões:
 
 - **Câmera:** Para utilização de funcionalidades relacionadas à câmera.
-- **Armazenamento:** Para acesso e armazenamento de dados no dispositivo.
+- **Armazenamento:** Para acesso e armazenamento de dados no dispositivo para salvamento dos dados relacionais a _feature camera_.
 
 ## Dependências
 
@@ -23,7 +75,7 @@ O projeto utiliza diversas dependências para aprimorar a experiência do usuár
 - **sqflite:** Responsável pela persistência de dados no SQLite.
 - **url_launcher:** Utilizada para navegação para rotas no navegador.
 - **get:** Utilizada para o controle de estado do aplicativo.
-- **image_picker:** Implementa a funcionalidade de câmera e gerencia permissões relacionadas.
+- **camera_camera:** Implementa a funcionalidade de câmera e gerencia permissões relacionadas.
 - **flutter_launcher_icons:** Utilizada para implementar o design de ícones do aplicativo.
 
 ## Arquitetura
@@ -36,6 +88,8 @@ O aplicativo segue a arquitetura em MVC (Model-View-Controller), proporcionando 
 
 ### Página Home
 
+![img](imageReadme/walpaper_home.png)
+
 - Lista de produtos com informações detalhadas (foto, título, descrição, valor, quantidade disponível).
 - Navegação para a página do produto ao clicar em um item da lista.
 - Adição de novos produtos ao estoque.
@@ -43,16 +97,22 @@ O aplicativo segue a arquitetura em MVC (Model-View-Controller), proporcionando 
 
 ### Página Produto
 
+![img](imageReadme/walpaper_prod.png)
+
 - Detalhes do produto, incluindo nome, descrição, data de alteração, data de criação, quantidade disponível em estoque e valor total.
 - Botão para acessar a página de alteração do produto.
 
 ### Página de Alteração
+
+![img](imageReadme/walpaper_edit.png)
 
 - Alteração das informações do produto (exceto data de criação e data de atualização).
 - Possibilidade de incrementar e decrementar a quantidade em estoque.
 - Exclusão do produto.
 
 ### Página de Configuração
+
+![img](imageReadme/walpaper_config.png)
 
 - Alteração de dados cadastrais do usuário.
 - Exclusão de todos os produtos.

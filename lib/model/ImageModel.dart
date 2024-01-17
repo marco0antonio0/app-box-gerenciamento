@@ -1,7 +1,5 @@
 // ignore_for_file: file_names, unnecessary_getters_setters
 
-import 'dart:io';
-
 import 'package:get/get.dart';
 
 class ImageModel extends GetxController {

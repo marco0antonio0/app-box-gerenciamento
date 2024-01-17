@@ -2,14 +2,16 @@
 
 import 'dart:io';
 
+import 'package:box_estoque/animations/Navigation.dart';
 import 'package:box_estoque/components/InputTexts.dart';
 import 'package:box_estoque/components/buttom.dart';
 import 'package:box_estoque/components/topbar.dart';
 import 'package:box_estoque/components/viewImage.dart';
+import 'package:box_estoque/main.dart';
 import 'package:box_estoque/model/EstoqueDatabase.dart';
 import 'package:box_estoque/pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:camera_camera/camera_camera.dart';
 
 class PageCadastro extends StatefulWidget {
   const PageCadastro({super.key});
@@ -35,29 +37,10 @@ class _PageCadastroState extends State<PageCadastro> {
   //  Instancia database
   EstoqueDatabase estoqueDB = EstoqueDatabase.instance;
   // =============================================================
-  // instancia da funcionalidade
-  final imagePicker = ImagePicker();
   // inciar o objeto imagem
   File? imageFile;
   // inciar o caminho do path objeto imagem
   String imageFilePath = '';
-
-  pick(ImageSource source) async {
-    // executa a operação de abrir camera
-    final pickedFile = await imagePicker.pickImage(source: source);
-
-    // se o retorno da operação acima for valido
-    // então sete os valores adequados resolvidos
-    if (pickedFile != null) {
-      setState(() {
-        imageFile = File(pickedFile.path);
-        imageFilePath = pickedFile.path;
-        print('esse é o caminho');
-        print(imageFilePath);
-      });
-    }
-  }
-  // =============================================================
 
   @override
   Widget build(BuildContext context) {
@@ -97,43 +80,63 @@ class _PageCadastroState extends State<PageCadastro> {
                     ),
                     // =======================================================================================
                     //            BTNS - alterar imagem:adiciona imagem  -- remover imagem
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 30),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              width: (larguraRelativa / 2) - 35,
-                              child: buttomForms(
-                                  resize: true,
-                                  titulo: imageFile != null
-                                      ? 'alterar imagem'
-                                      : 'adiciona imagem',
-                                  fn: () {
-                                    // Navigator.of(context).pop();
-                                    // Buscar imagem da galeria
-                                    pick(ImageSource.camera);
-                                  }),
-                            ),
-                            SizedBox(width: 10),
-                            imageFile != null
-                                ? SizedBox(
+                    //
+                    //            enable:disable <== feature camera
+                    FetueareCamera
+                        ? Container(
+                            padding: EdgeInsets.symmetric(horizontal: 30),
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  SizedBox(
                                     width: (larguraRelativa / 2) - 35,
                                     child: buttomForms(
-                                        color: Colors.red[300],
+                                        color: imageFile != null
+                                            ? Colors.red[300]?.withOpacity(0.7)
+                                            : null,
                                         resize: true,
-                                        titulo: 'remover imagem',
+                                        titulo: imageFile != null
+                                            ? 'remover imagem'
+                                            : 'adiciona imagem',
                                         fn: () {
-                                          // remove imagem da memoria
-                                          setState(() {
-                                            imageFile = null;
-                                            imageFilePath = '';
-                                          });
+                                          //
+                                          //======================================
+                                          //          remover imagem
+                                          //
+                                          if (imageFile != null) {
+                                            setState(() {
+                                              imageFile = null;
+                                              imageFilePath = '';
+                                            });
+                                          } else {
+                                            //
+                                            //======================================
+                                            //          adiciona imagem
+                                            //
+                                            navigateToPageWithReverseSlideAnimation(
+                                                context,
+                                                CameraCamera(
+                                                    onFile: (file) => {
+                                                          setState(() {
+                                                            imageFile = file;
+                                                          }),
+                                                          if (imageFile != null)
+                                                            {
+                                                              setState(() {
+                                                                imageFilePath =
+                                                                    file.path;
+                                                              }),
+                                                              Navigator.pop(
+                                                                  context)
+                                                            }
+                                                        }));
+                                            //======================================
+                                          }
                                         }),
-                                  )
-                                : Container(),
-                          ]),
-                    ),
+                                  ),
+                                ]),
+                          )
+                        : Container(),
                     // =======================================================================================
                     //                                  Margem
                     const SizedBox(height: 10),

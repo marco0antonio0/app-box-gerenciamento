@@ -8,10 +8,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 //=======================================
+//           Função nova
+//      camera acessos a fotos
+final FetueareCamera = true;
+//=======================================
 // debugMode:
 // refere-se a adaptação da tela em
 // diversos cenarios
-const debugMode = false;
+final debugMode = false;
+//
+//
+//=======================================
 void main() {
   runApp(
     debugMode
