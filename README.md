@@ -7,7 +7,7 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
 
 ## Informações Gerais
 
-![img](imageReadme/walpaperDonwload2.png)
+![img](imageReadme/walpaperDonwload3.png)
 
 - **Nome do App:** Box Gerenciamento
 - **Desenvolvido em:** Flutter
