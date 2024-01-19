@@ -12,6 +12,7 @@ import 'package:get/get.dart';
 // do tipo double 'valor' e 'qtds'
 // pagina cadastro prod
 // pagina edit prod
+// Correção no texto da pagina sobre
 //=======================================
 //           Função nova
 //      camera acessos a fotos

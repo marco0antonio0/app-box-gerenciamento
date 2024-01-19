@@ -69,7 +69,9 @@ class _PageSobreState extends State<PageSobre> {
                   //                           Widget - Text estilizado
                   ParagraphType2(
                       text:
-                          'O projeto utiliza diversas dependências para aprimorar a experiência do usuário e garantir funcionalidades avançadas\n\n- auto_size_text: Usada para garantir a responsividade de elementos de texto.\n\n- device_preview: Utilizada para testes unitários manuais e identificação de erros relacionados à estética do UI.\n\n- sqflite: Responsável pela persistência de dados no SQLite\n\n- url_launcher: Utilizada para navegação para rotas no navegador.\n\n- get: Utilizada para o controle de estado do aplicativo.\n\n- image_picker: Implementa a funcionalidade de câmera e gerencia permissões relacionadas.\n\n- flutter_launcher_icons: Utilizada para implementar o design de ícones do aplicativo.'),
+                          'O projeto utiliza diversas dependências para aprimorar a experiência do usuário e garantir funcionalidades avançadas\n\n- auto_size_text: Usada para garantir a responsividade de elementos de texto.\n\n- device_preview: Utilizada para testes unitários manuais e identificação de erros relacionados à estética do UI.\n\n- sqflite: Responsável pela persistência de dados no SQLite\n\n- url_launcher: Utilizada para navegação para rotas no navegador.\n\n- get: Utilizada para o controle de estado do aplicativo.\n\n- camera_camera: Implementa a funcionalidade de câmera e gerencia permissões relacionadas.\n\n- flutter_launcher_icons: Utilizada para implementar o design de ícones do aplicativo.'),
+                  // =======================================================================================
+                  ParagraphType2(text: 'Versão do app 2.2.0'),
                   // =======================================================================================
                   ParagraphType2(
                       text:
