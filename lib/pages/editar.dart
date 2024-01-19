@@ -357,7 +357,9 @@ class _PageEditarState extends State<PageEditar> {
                           estoqueDB.updateProduct(
                               id: widget.data['id'],
                               nomeProd: controllerNome.text,
-                              pathImage: imageFilePath,
+                              pathImage: imageFile?.path != null
+                                  ? imageFile!.path
+                                  : '',
                               descProd: controllerDesc.text,
                               valorProd: controllerValor.text,
                               qtdsProd: controllerQtds.text,
