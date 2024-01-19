@@ -26,12 +26,14 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <th>v1 - Feature camera - beta instável </th>
         <th>v2  - disable Feature camera - estável </th>
         <th>v2.1 - Feature camera - beta instável</th>
+        <th>v2.2 - Feature camera - beta instável</th>
         <th>responsivo</th>
     </tr>
     <tr>
         <td>Android 7 (Nougat)</td>
         <td>---------</td>
         <td>✅</td>
+        <td>em andamento</td>
         <td>em andamento</td>
         <td>✅</td>
     </tr>
@@ -40,6 +42,7 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
+        <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
@@ -47,11 +50,13 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <td>---------</td>
         <td>✅</td>
         <td>em andamento</td>
+        <td>em andamento</td>
         <td>✅</td>
     </tr>
     <tr>
         <td>Android 10</td>
         <td>---------</td>
+        <td>✅</td>
         <td>✅</td>
         <td>✅</td>
         <td>✅</td>
@@ -62,6 +67,7 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <td>✅</td>
         <td>✅</td>
         <td>✅</td>
+        <td>✅</td>
     </tr>
     <tr>
         <td>Android 12</td>
@@ -69,10 +75,12 @@ O **Box Gerenciamento** é um aplicativo desenvolvido em Flutter para facilitar 
         <td>✅</td>
         <td>✅</td>
         <td>✅</td>
+        <td>✅</td>
     </tr>
     <tr>
         <td>Android 13 </td>
         <td>---------</td>
+        <td>✅</td>
         <td>✅</td>
         <td>✅</td>
         <td>✅</td>

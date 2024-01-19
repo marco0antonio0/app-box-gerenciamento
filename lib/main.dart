@@ -7,10 +7,15 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//        V2.2
+// Correções aplicadas a formato de campo
+// do tipo double 'valor' e 'qtds'
+// pagina cadastro prod
+// pagina edit prod
 //=======================================
 //           Função nova
 //      camera acessos a fotos
-final FetueareCamera = false;
+final FetueareCamera = true;
 //=======================================
 // debugMode:
 // refere-se a adaptação da tela em

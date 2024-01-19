@@ -144,6 +144,9 @@ class _PageCadastroState extends State<PageCadastro> {
                     //                            ENTRADA DE TEXTO - nome
                     InputTextEditing(
                       fnOnChanged: () {
+                        // =======================================================
+                        //    caso o campo esteja vazio set a mensagem de erro
+                        //    caso contrario campo erro vazio
                         setState(() {
                           errMensageNome = controllerNome.text.isNotEmpty
                               ? ''
@@ -160,6 +163,9 @@ class _PageCadastroState extends State<PageCadastro> {
                     //                            ENTRADA DE TEXTO - detalhes
                     InputTextEditing(
                       fnOnChanged: () {
+                        // =======================================================
+                        //    caso o campo esteja vazio set a mensagem de erro
+                        //    caso contrario campo erro vazio
                         setState(() {
                           errMensageDesc = controllerDesc.text.isNotEmpty
                               ? ''
@@ -177,11 +183,33 @@ class _PageCadastroState extends State<PageCadastro> {
                     InputTextEditing(
                       prefix: '\$',
                       fnOnChanged: () {
-                        setState(() {
-                          errMensageValor = controllerValor.text.isNotEmpty
-                              ? ''
-                              : 'Campo vazio';
-                        });
+                        // ==========================================================
+                        //                  verifica se campo vazio
+                        //
+                        if (controllerValor.text.isNotEmpty) {
+                          // ====================================
+                          // valida se o valor double se valido
+                          try {
+                            double.parse(controllerValor.text) * 1.0;
+                            setState(() {
+                              errMensageValor = '';
+                            });
+                          } catch (e) {
+                            // ==================================
+                            // caso tenha algum erro no valor double
+                            // set o erro mensagem
+                            setState(() {
+                              errMensageValor = 'Campo invalido';
+                            });
+                          }
+                          //
+                        } else {
+                          // ==================================
+                          // caso o campo esteja vazio set o erro
+                          setState(() {
+                            errMensageValor = 'Campo vazio';
+                          });
+                        }
                       },
                       titulo: 'valor unitario - produto',
                       maxLines: 1,
@@ -195,11 +223,33 @@ class _PageCadastroState extends State<PageCadastro> {
                     InputTextEditing(
                       prefix: 'x',
                       fnOnChanged: () {
-                        setState(() {
-                          errMensageQtds = controllerQtds.text.isNotEmpty
-                              ? ''
-                              : 'Campo vazio';
-                        });
+                        // ==========================================================
+                        //                  verifica se campo vazio
+                        //
+                        if (controllerQtds.text.isNotEmpty) {
+                          // ====================================
+                          // valida se o valor double se valido
+                          try {
+                            double.parse(controllerQtds.text) * 1.0;
+                            setState(() {
+                              errMensageQtds = '';
+                            });
+                          } catch (e) {
+                            // ==================================
+                            // caso tenha algum erro no valor double
+                            // set o erro mensagem
+                            setState(() {
+                              errMensageQtds = 'Campo invalido';
+                            });
+                          }
+                          //
+                        } else {
+                          // ==================================
+                          // caso o campo esteja vazio set o erro
+                          setState(() {
+                            errMensageQtds = 'Campo vazio';
+                          });
+                        }
                       },
                       titulo: 'quatidade - produto',
                       maxLines: 1,
@@ -216,6 +266,8 @@ class _PageCadastroState extends State<PageCadastro> {
                     buttomForms(
                         titulo: 'adicionar',
                         fn: () async {
+                          // ==============================================================================================
+                          //  faz a verificção se todos os campos estão preenchidos caso contrario seta a mensagem de erro
                           setState(() {
                             errMensageNome = controllerNome.text.isNotEmpty
                                 ? ''
@@ -223,13 +275,68 @@ class _PageCadastroState extends State<PageCadastro> {
                             errMensageDesc = controllerDesc.text.isNotEmpty
                                 ? ''
                                 : 'Campo vazio';
-                            errMensageValor = controllerValor.text.isNotEmpty
-                                ? ''
-                                : 'Campo vazio';
-                            errMensageQtds = controllerQtds.text.isNotEmpty
-                                ? ''
-                                : 'Campo vazio';
+                            // errMensageValor = controllerValor.text.isNotEmpty
+                            //     ? ''
+                            //     : 'Campo vazio';
+                            // errMensageQtds = controllerQtds.text.isNotEmpty
+                            //     ? ''
+                            //     : 'Campo vazio';
                           });
+                          // ================================================
+                          // ================================================
+                          //      validação para o campo double Valor
+                          if (controllerValor.text.isNotEmpty) {
+                            // ====================================
+                            // valida se o valor double se valido
+                            try {
+                              double.parse(controllerValor.text) * 1.0;
+                              setState(() {
+                                errMensageValor = '';
+                              });
+                            } catch (e) {
+                              // ==================================
+                              // caso tenha algum erro no valor double
+                              // set o erro mensagem
+                              setState(() {
+                                errMensageValor = 'Campo invalido';
+                              });
+                            }
+                            //
+                          } else {
+                            // ==================================
+                            // caso o campo esteja vazio set o erro
+                            setState(() {
+                              errMensageValor = 'Campo vazio';
+                            });
+                          }
+                          // ================================================
+                          // ================================================
+                          //      validação para o campo double Qtds
+                          if (controllerQtds.text.isNotEmpty) {
+                            // ====================================
+                            // valida se o valor double se valido
+                            try {
+                              double.parse(controllerQtds.text) * 1.0;
+                              setState(() {
+                                errMensageQtds = '';
+                              });
+                            } catch (e) {
+                              // ==================================
+                              // caso tenha algum erro no valor double
+                              // set o erro mensagem
+                              setState(() {
+                                errMensageQtds = 'Campo invalido';
+                              });
+                            }
+                            //
+                          } else {
+                            // ==================================
+                            // caso o campo esteja vazio set o erro
+                            setState(() {
+                              errMensageQtds = 'Campo vazio';
+                            });
+                          }
+                          // =======================================================
                           if (errMensageNome.isEmpty &&
                               errMensageDesc.isEmpty &&
                               errMensageValor.isEmpty &&
