@@ -1,4 +1,4 @@
-package com.example.box_estoque
+package com.ladsoft.box_estoque
 
 import io.flutter.embedding.android.FlutterActivity
 
